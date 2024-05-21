@@ -1,0 +1,199 @@
+
+*/index1*/
+<!DOCTYPE html>
+<html lang="pt-br">
+<title> Guia Interativo</title>
+<head> 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">  
+    <h1 class="heading"> Anabolizante e seus prejuízos</h1> 
+</head>
+
+<body> 
+    
+    <p> <h2> Você usária?</h2></p>
+    <a href="index2.html"><button> Sim</button></a> <div> <br> <a href="index2.html"><button> Não</button></div></a>
+   
+        
+    
+
+    
+</body>
+</html>
+
+
+*/ index2/*
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Guia Interativo</title>
+</head>
+<body>
+   <h1>Você se considera uma pessoa saúdavel?</h1> 
+   <a href="index3.html" class= ><button class="buttonstyle"> <span class="text"></span>Sim</span><span>Eu usaria!</span></span></button></a> <div> <br> <a href="index3.html"><button class="buttonstyle"> <span class="text"></span>Não</span><span>Não usaria!</span></span></button></div></a>
+   <p> 
+    <h4> 
+       <a class="buttonstyle" href="index.html"><button> <- Pergunta anterior </button></a>  
+    </h4>
+</p>
+
+</body>
+</html>
+
+*/index3*/
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Guia Interativo</title>
+</head>
+<body>
+   <h1>Você se sente bem com seu próprio corpo?</h1> 
+   <a href="index4.html"><button> Sim</button></a> <div> <br> <a href="index4.html"><button> Não</button></div></a>
+   <p> 
+    <h4> 
+       <a class="vicio" href="index2.html"> <- Pergunta anterior</a>  
+    </h4>
+</p>
+
+</body>
+</html>
+
+*/index4*/
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Guia Interativo</title>
+</head>
+<body>
+    <h1>Você pratica exercícios físicos?</h1> 
+    <a href="index5.html"><button> Sim</button></a> <div> <br> <a href="index5.html"><button> Não</button></div></a>
+    <p> 
+     <h4> 
+        <a class="vicio" href="index3.html"> <- Pergunta anterior</a>  
+     </h4>
+ </p>
+    
+</body>
+</html>
+
+*/index5*/
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Guia Interativo</title>
+</head>
+<body>
+    <h1>As redes socias te influenciam de maneira negativa?</h1> 
+    <a href="https://youtu.be/8zZnW8qAr5E?si=v_5lsRhuOsiP3ycD"> <button> Sim</button></a> <div> <br> <a href="https://youtu.be/6Sz-Dqyhr_I?si=qsHZidu3W6irtA8g"><button> Não</button></div></a>
+    <p> 
+     <h4> 
+        <a class="vicio" href="index4.html"> <- Pergunta anterior</a>
+        
+     </h4>
+ </p>
+
+    
+</body>
+</html>
+
+*/style*/
+body {
+    text-align: center;
+
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: 
+        linear-gradient(
+            to left,
+            rgb(0 0 0 / 0.5),
+            rgb(0 0 0 / 0.1) 
+    );
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat  ;
+}
+   
+
+.heading { 
+text-align: center;
+padding: 3px 5px;
+}
+
+.buttonstyle {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .buttonstyle span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  .buttonstyle span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  .buttonstyle:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  .buttonstyle:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .buttonstyle:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+   
